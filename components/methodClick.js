@@ -1,31 +1,11 @@
-
-import { LOBY_ELEMENT_CLICK } from '../locator/locators_v1';
-
+ 
 class ElementClick {
-    FirstElementLink() {
-        return findAllDisplayed(LOBY_ELEMENT_CLICK);
+    async ClickElementByLocator(AB_TEST) {
+        const element = await $(AB_TEST);
+        await element.click();
+        console.log(`Click on element with locator: ${AB_TEST}`);
     }
 
-    async ClickOnRandomLink() {
-        const randomLink = await this.FirstElementLink();
-        await randomLink.click();
-    }
 }
 
-export default new ElementClick();
-
-
-
-
-
-
-
-
-
-
-
-// netmatch 5 min 
-// vineri ora 13:30
-
-
-
+module.exports = ElementClick;
