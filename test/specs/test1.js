@@ -52,8 +52,8 @@ describe('LinkedIn', () => {
         const passbox = await $('//*[@id="session_password"]');
         const logbt = await $('//*[@id="main-content"]/section[1]/div/div/form/div[2]/button');
 
-        await emailbox.setValue('salistean.d3@gmail.com');
-        await passbox.setValue('!0258823733KoL12');
+        await emailbox.setValue('.........');
+        await passbox.setValue('..........');
 
         await logbt.click();
 
