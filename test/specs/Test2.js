@@ -1,25 +1,13 @@
-const BaseUrlFunction = require('../../data/baseUrl');
+// const UrlLink= require('../../data/baseUrl'); //! Trebuie sa ne folosim de basUrl
 const ElementClick = require('../../components/methodClick');
-const Locators = require('../../locator/locators_v1');
 
 describe('heroku Internet Exploratory', function () {
-    let baseUrl;
-    // let clickOnElement;
 
-    before( async function () {
-        baseUrl = await BaseUrlFunction();
-        // clickOnElement = new ElementClick();
+    it('click on element tab AB Testing', async function () {
+        await browser.url('https://the-internet.herokuapp.com/');
+        await ElementClick.ClickElementByLocator();
 
-    });
-
-    it('click on link', async function () {
-        console.log(baseUrl);
-
-        const locator = Locators.AB_TEST;
-        await browser.url(baseUrl);
-        //await ElementClick.
     })
-
 });
 
 
