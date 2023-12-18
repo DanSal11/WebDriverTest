@@ -13,6 +13,61 @@ class ElementClick {
 
         console.log(`Click on element with locator: ${Locators}`);
     }
+
+
+    async ClickAddOrRemoveLoc() {
+        const timeout = 5000;
+        const btAddorRem = await $(Locators.AddOrRem_TEST);
+        await btAddorRem.waitForDisplayed({timeout});
+        await btAddorRem.click();
+    }
+    async ClickAddLoc() {
+        const timeout = 5000;
+        const btAdd = await $(Locators.Add_TEST);
+        await btAdd.waitForDisplayed({timeout});
+        await btAdd.click();
+    }
+    async ClickRemLoc() {
+        const timeout = 5000;
+        const btRem = await $(Locators.Rem_TEST);
+        await btRem.waitForDisplayed({timeout});
+        await btRem.click();
+    }
+
+    async ClickBrokenImages() {
+        const timeout = 5000;
+        const btBrIm = await $(Locators.BrokenImages);
+        await btBrIm.waitForDisplayed({timeout});
+        await btBrIm.click();
+    }
+
+    async ClickDragAndDrop() {
+        const timeout = 5000;
+        const btDrg = await $(Locators.DragAndDrop);
+        await btDrg.waitForDisplayed({timeout});
+        await btDrg.click();
+    }
+
+    async EntryAd() {
+        const timeout = 5000;
+        const btEntryAd = await $(Locators.EntryAd);
+        await btEntryAd.waitForDisplayed({timeout});
+        await btEntryAd.click();
+    }
+
+    async RestartAd() {
+        const timeout = 5000;
+        const btRestartAd = await $(Locators.RestartAd);
+        await btRestartAd.waitForDisplayed({timeout});
+        await btRestartAd.click();
+    }
+
+    async CloseAd() {
+        const timeout = 5000;
+        const btCloseAd = await $(Locators.CloseAd);
+        await btCloseAd.waitForDisplayed({timeout});
+        await btCloseAd.click();
+    }
 }
 
 module.exports = new ElementClick();

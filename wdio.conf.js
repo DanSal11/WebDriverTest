@@ -23,7 +23,13 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/Test2.js'
+        './test/specs/AddOrRemItem.js'
+        // './test/specs/BrokenImages.js'
+        // './test/specs/DragAndDrop.js'
+        // './test/specs/EntryAd.js'
+
+        // './test/specs/Test2.js'
+        // './test/specs/test1.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -55,6 +61,7 @@ exports.config = {
         maxInstances: 10,
         browserName: 'chrome'
     }],
+    
 
     //
     // ===================
