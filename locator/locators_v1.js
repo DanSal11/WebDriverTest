@@ -15,6 +15,10 @@ const locators = {
     RestartAd: '//*[@id="restart-ad"]',
     // Ad: '//*[@id="modal"]/div[2]',
     CloseAd: '//*[@id="modal"]/div[2]/div[3]/p',
+
+    FileUpload: '//*[@id="content"]/ul/li[18]/a',
+    ChoseFile: '//*[@id="file-upload"]',
+    Upload: '//*[@id="file-submit"]',
 }
 
 module.exports = locators;

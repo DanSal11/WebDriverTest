@@ -23,10 +23,11 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/AddOrRemItem.js'
+        //'./test/specs/AddOrRemItem.js'
         // './test/specs/BrokenImages.js'
         // './test/specs/DragAndDrop.js'
         // './test/specs/EntryAd.js'
+        './test/specs/FileUploader.js'
 
         // './test/specs/Test2.js'
         // './test/specs/test1.js'

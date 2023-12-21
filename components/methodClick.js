@@ -68,6 +68,22 @@ class ElementClick {
         await btCloseAd.waitForDisplayed({timeout});
         await btCloseAd.click();
     }
+
+    async ClickFileUpload() {
+        const timeout = 5000;
+        const btFileUpload = await $(Locators.FileUpload);
+        await btFileUpload.waitForDisplayed({timeout});
+        await btFileUpload.click();
+    }
+
+    async ClickUpload() {
+        const timeout = 5000;
+        const btUpload = await $(Locators.Upload);
+        await btUpload.waitForDisplayed({timeout});
+        await btUpload.click();
+    }
+
+
 }
 
 module.exports = new ElementClick();
