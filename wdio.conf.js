@@ -27,7 +27,8 @@ exports.config = {
         // './test/specs/BrokenImages.js'
         // './test/specs/DragAndDrop.js'
         // './test/specs/EntryAd.js'
-        './test/specs/FileUploader.js'
+        //'./test/specs/FileUploader.js'
+        './test/specs/BasicAuthCookies.js'
 
         // './test/specs/Test2.js'
         // './test/specs/test1.js'

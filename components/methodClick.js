@@ -83,6 +83,12 @@ class ElementClick {
         await btUpload.click();
     }
 
+    async ClickBasicAuth() {
+        const timeout = 5000;
+        const btBasicAuth = await $(Locators.BasicAuth);
+        await btBasicAuth.waitForDisplayed({timeout});
+        await btBasicAuth.click();
+    }
 
 }
 

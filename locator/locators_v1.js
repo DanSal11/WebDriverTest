@@ -19,6 +19,8 @@ const locators = {
     FileUpload: '//*[@id="content"]/ul/li[18]/a',
     ChoseFile: '//*[@id="file-upload"]',
     Upload: '//*[@id="file-submit"]',
+
+    BasicAuth: '//*[@id="content"]/ul/li[3]/a',
 }
 
 module.exports = locators;
