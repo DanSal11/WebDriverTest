@@ -27,7 +27,7 @@ exports.config = {
         // './test/specs/BrokenImages.js'
         // './test/specs/DragAndDrop.js'
         // './test/specs/EntryAd.js'
-        //'./test/specs/FileUploader.js'
+        // './test/specs/FileUploader.js'
         './test/specs/BasicAuthCookies.js'
 
         // './test/specs/Test2.js'
@@ -61,7 +61,7 @@ exports.config = {
     //
     capabilities: [{
         maxInstances: 10,
-        browserName: 'chrome'
+        browserName: 'chrome',
     }],
     
 
@@ -112,8 +112,14 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],
-    //
+    services: [
+        ['chromedriver', {
+            logFileName: 'wdio-chromedriver.log', // default
+            outputDir: 'driver-logs', // overwrites the config.outputDir
+            args: ['--silent'],
+            chromedriverCustomPath:"C:\\Users\\salis\\AppData\\Local\\Temp\\chromedriver\\win64-120.0.6099.109\\chromedriver-win64\\chromedriver.exe"
+        }]
+    ],
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
