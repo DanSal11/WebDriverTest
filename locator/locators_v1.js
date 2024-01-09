@@ -21,6 +21,9 @@ const locators = {
     Upload: '//*[@id="file-submit"]',
 
     BasicAuth: '//*[@id="content"]/ul/li[3]/a',
+
+    Dropdown: '//*[@id="content"]/ul/li[11]/a',
+    btDropDown: '//*[@id="dropdown"]',
 }
 
 module.exports = locators;

@@ -90,6 +90,20 @@ class ElementClick {
         await btBasicAuth.click();
     }
 
+    async Dropdown() {
+        const timeout = 5000;
+        const btDropdown = await $(Locators.Dropdown);
+        await btDropdown.waitForDisplayed({timeout});
+        await btDropdown.click();
+    }
+
+    async btDropdown() {
+        const timeout = 5000;
+        const btDrpdwn = await $(Locators.btDropDown);
+        await btDrpdwn.waitForDisplayed({timeout});
+        await btDrpdwn.click();
+    }
+
 }
 
 module.exports = new ElementClick();
