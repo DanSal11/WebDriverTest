@@ -104,6 +104,26 @@ class ElementClick {
         await btDrpdwn.click();
     }
 
+    async ClickFrmAuth() {
+        const timeout = 5000;
+        const btFrmAuth = await $(Locators.FormAuthentification);
+        await btFrmAuth.waitForDisplayed({timeout});
+        await btFrmAuth.click();
+    }
+
+    async Login() {
+        const timeout = 5000;
+        const btLogin = await $(Locators.Login);
+        await btLogin.waitForDisplayed({timeout});
+        await btLogin.click();
+    }
+
+    async Logout() {
+        const timeout = 5000;
+        const btLogout = await $(Locators.Logout);
+        await btLogout.waitForDisplayed({timeout});
+        await btLogout.click();
+    }
 }
 
 module.exports = new ElementClick();

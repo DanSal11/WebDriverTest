@@ -24,6 +24,14 @@ const locators = {
 
     Dropdown: '//*[@id="content"]/ul/li[11]/a',
     btDropDown: '//*[@id="dropdown"]',
+
+    FormAuthentification: '//*[@id="content"]/ul/li[21]/a',
+    Login: '//*[@id="login"]/button/i',
+    // username: '//*[@id="username"]',
+    // password: '//*[@id="password"]',
+    Logout: '//*[@id="content"]/div/a',
+
+    
 }
 
 module.exports = locators;

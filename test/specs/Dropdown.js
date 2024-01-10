@@ -1,3 +1,5 @@
+//2
+
 const ElementClick = require('../../components/methodClick');
 
 describe('Dropdown', function() {
@@ -9,7 +11,7 @@ describe('Dropdown', function() {
     it('click the Dropdown and show the options', async function() {
         await ElementClick.btDropdown();
         // let OptionDrpDwn = $('//*[@id="dropdown"]/option[1]');
-        let OptionDrpDwn1 = $('//*[@id="dropdown"]/option[2]');
+        let OptionDrpDwn1 = $('//*[@id="dropdown"]/option[2]'); 
         let OptionDrpDwn2 = $('//*[@id="dropdown"]/option[3]');
         let AllOption = [OptionDrpDwn1,OptionDrpDwn2];
         
