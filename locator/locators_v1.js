@@ -31,6 +31,9 @@ const locators = {
     // password: '//*[@id="password"]',
     Logout: '//*[@id="content"]/div/a',
 
+    btDynamicControl: '//*[@id="content"]/ul/li[13]/a',
+    enableORdisable: '//*[@id="input-example"]/button',
+    addORrem: '//*[@id="checkbox-example"]/button',
     
 }
 

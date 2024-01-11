@@ -30,7 +30,8 @@ exports.config = {
         // './test/specs/FileUploader.js'
         // './test/specs/BasicAuthCookies.js'
         // './test/specs/Dropdown.js'
-        './test/specs/FormAuthentification.js'
+        //'./test/specs/FormAuthentification.js'
+        './test/specs/DynamicControls.js'
 
         // './test/specs/Test2.js'
         // './test/specs/test1.js'

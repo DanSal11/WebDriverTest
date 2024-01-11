@@ -124,6 +124,27 @@ class ElementClick {
         await btLogout.waitForDisplayed({timeout});
         await btLogout.click();
     }
+
+    async btDynamicControls() {
+        const timeout = 5000;
+        const btDynamicControls = await $(Locators.btDynamicControl);
+        await btDynamicControls.waitForDisplayed({timeout});
+        await btDynamicControls.click();
+    }
+
+    async btEnableOrDisable() {
+        const timeout = 5000;
+        const btEnableOrDisable = await $(Locators.enableORdisable);
+        await btEnableOrDisable.waitForDisplayed({timeout});
+        await btEnableOrDisable.click();
+    }
+
+    async BTaddORrem() {
+        const timeout = 5000;
+        const BTaddORrem = await $(Locators.addORrem);
+        await BTaddORrem.waitForDisplayed({timeout});
+        await BTaddORrem.click();
+    }
 }
 
 module.exports = new ElementClick();
