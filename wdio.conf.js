@@ -31,7 +31,8 @@ exports.config = {
         // './test/specs/BasicAuthCookies.js'
         // './test/specs/Dropdown.js'
         //'./test/specs/FormAuthentification.js'
-        './test/specs/DynamicControls.js'
+        // './test/specs/DynamicControls.js'
+        './test/specs/StatusCodes.js'
 
         // './test/specs/Test2.js'
         // './test/specs/test1.js'

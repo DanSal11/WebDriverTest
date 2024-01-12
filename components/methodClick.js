@@ -145,6 +145,20 @@ class ElementClick {
         await BTaddORrem.waitForDisplayed({timeout});
         await BTaddORrem.click();
     }
+
+    async StatusCodes() {
+        const timeout = 5000;
+        const BTStatusCodes = await $(Locators.StatusCodes);
+        await BTStatusCodes.waitForDisplayed({timeout});
+        await BTStatusCodes.click();
+    }
+
+    async HereBackHome() {
+        const timeout = 5000;
+        const btHereBackHome = await $(Locators.HereBackHome);
+        await btHereBackHome.waitForDisplayed({timeout});
+        await btHereBackHome.click();
+    }
 }
 
 module.exports = new ElementClick();

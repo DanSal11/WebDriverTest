@@ -34,6 +34,9 @@ const locators = {
     btDynamicControl: '//*[@id="content"]/ul/li[13]/a',
     enableORdisable: '//*[@id="input-example"]/button',
     addORrem: '//*[@id="checkbox-example"]/button',
+
+    StatusCodes: '//*[@id="content"]/ul/li[42]/a',
+    HereBackHome: '//*[@id="content"]/div/p/a',
     
 }
 
